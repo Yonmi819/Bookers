@@ -1,0 +1,24 @@
+
+<body>
+   
+    <p id="success">Book was successfully create.</p>
+   
+
+
+<p>
+  <strong>Title:</strong>
+  <span><%=  @book.title %></span>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <span><%=  @book.body %></span>
+</p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %> 
+  | 
+<a class= "back" href="/books">Back</a>
+
+</body>
+
+
